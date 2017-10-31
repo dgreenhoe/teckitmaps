@@ -1,5 +1,5 @@
 MIT License: 
-(adopted from https://github.com/dgreenhoe/teckitmaps/community/license/new?branch=master&template=mit)
+(adapted from https://github.com/dgreenhoe/teckitmaps/community/license/new?branch=master&template=mit)
 
 Copyright (c) 2017 Daniel J. Greenhoe
 
