@@ -1,26 +1,23 @@
-#============================================================================
-# Daniel J. Greenhoe
-# Readme file for 
-# https://github.com/dgreenhoe/teckitmaps/
-#============================================================================
-#---------------------------------------
+# Readme file for TECkit mapping repository
+## Daniel J. Greenhoe
+## https://github.com/dgreenhoe/teckitmaps/
+
 # What is a TECkit map?
-#---------------------------------------
 A TECkit map is a Unicode mapping file which, after compiling, can be used with 
 the XeLaTeX software to map one or more Unicode points to another Unicode point.
   scripts.sil.org/teckit
 Note that before being used, a TECkit .map file must be compiled to a .tec file.
 
-#---------------------------------------
 # TECkit maps in this repository
-#---------------------------------------
-  * punctuation.map: punctuation and PinYin (for Chinese phonetics) mappings
-  * ascii-uipa.map:  IPA symbols
-  * zht2zhs.map:     Traditional Chinese character to Chinese Simplified character mapping
 
-#---------------------------------------
-# Example 1 [the emdash]
-#---------------------------------------
+| Map File         | Description                                                             |
+|------------------|-------------------------------------------------------------------------|
+| punctuation.map  | punctuation and PinYin (for Chinese phonetics) mappings                 |
+| ascii-uipa.map   | IPA symbols                                                             |
+| zht2zhs.map      | Traditional Chinese character to Chinese Simplified character mapping   |
+
+# Examples
+## Example 1: The emdash
 In an .tex file, one might well want an "em dash".
 An "em dash" is simply a long dash that is approximately 1em wide.
 "1 em wide" means that it is as wide as a capital Latin letter (ABC...)
@@ -40,9 +37,7 @@ To specify use of this TECkit map, one can do this in the Unicode font setup:
    Mapping = punctuation,
    }
 
-#---------------------------------------
-# Example 2 [PinYin for Chinese phonetics]
-#---------------------------------------
+## Example 2: PinYin for Chinese phonetics
 Spoken Mandarin Chinese has about 401 possible syllable sounds ("phones").
 This isn't many. But each syllable can be one of five tones.
 These tones are referred to as "first tone", "second tone", "third tone",
@@ -66,9 +61,7 @@ Mandarin Chinese.
 In this repository, such mapping is performed by the TECkit map
   punctuation.map
 
-#---------------------------------------
-# Example 3 [IPA phonetics]
-#---------------------------------------
+## Example 3: IPA phonetics
 The International Phonetic Alphabet (IPA) contains many special symbols that can be used for 
 the phonetic description of many many languages. 
   http://unicode.org/charts/PDF/U0250.pdf
@@ -85,9 +78,7 @@ In this repository, such mappings are provided in "ascii-uipa.map".
 An appropriate font can be assigned the mappings using something like this:
   \newcommand{\fntipa} {\fntFreeSans\addfontfeatures{Mapping=/dan/r/common/teckit/ascii-uipa}}
 
-#---------------------------------------
-# Example 4 [Traditional to Simplified Chinese characters]
-#---------------------------------------
+## Example 4: Traditional to Simplified Chinese characters
 Currently both traditional and simplified Chinese characters are 
 both used by large numbers of people in the world.
 Therefore, it is "best" that documents typeset "in Chinese" 
